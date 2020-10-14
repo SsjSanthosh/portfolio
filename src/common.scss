@@ -1,0 +1,25 @@
+@import "./colors.scss";
+
+button {
+  border: none;
+  width: 200px;
+  padding: 16px 0;
+  background: #fff;
+  border: 1px solid $PRIMARY_COLOR;
+  outline: none;
+  margin: 16px;
+  cursor: pointer;
+  &:hover {
+    background-color: $PRIMARY_COLOR;
+    color: #fff;
+  }
+  transition: background-color 0.3s ease-in-out;
+}
+
+.primary-color-bg {
+  background-color: $PRIMARY_COLOR;
+}
+
+.primary-color {
+  color: $PRIMARY_COLOR;
+}

@@ -1,0 +1,26 @@
+.brand {
+  color: black;
+}
+.link {
+  color: #999;
+  text-decoration: none;
+}
+
+.nav-list {
+  display: flex;
+  margin-left: 0;
+  > li {
+    list-style: none;
+    margin: 1em;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:hover {
+      color: black;
+    }
+  }
+}
+
+.active-nav {
+  color: black;
+}

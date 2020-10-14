@@ -1,0 +1,19 @@
+.posts {
+  list-style-type: none;
+  margin: 0;
+  .post {
+    margin: 1rem 0;
+    > a {
+      background-color: #f4f4f4;
+      color: #000;
+      display: block;
+      text-decoration: none;
+      padding: 1rem;
+      &:hover {
+        background-color: darken(#f4f4f4, 50);
+        color: white;
+      }
+      transition: all 0.2s ease-in-out;
+    }
+  }
+}

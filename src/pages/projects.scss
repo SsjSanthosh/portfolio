@@ -1,0 +1,10 @@
+.project-preview-wrapper {
+  display: flex;
+  .project-preview {
+    width: 45%;
+    margin: 16px;
+    button {
+      width: 150px;
+    }
+  }
+}

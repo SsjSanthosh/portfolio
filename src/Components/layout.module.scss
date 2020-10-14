@@ -1,0 +1,16 @@
+.container {
+  margin: 0 auto;
+  max-width: 80vw;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 100vh;
+  .footer {
+    justify-self: flex-end;
+  }
+  .content {
+    padding: 3em 0 2em;
+    flex: 1;
+  }
+}

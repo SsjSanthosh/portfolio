@@ -6,5 +6,44 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  plugins: [
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
+
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "source",
+        path: `${__dirname}/src/`,
+      },
+    },
+    `gatsby-plugin-sharp`,
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          "gatsby-remark-relative-images",
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 900,
+              linkImagesToOriginal: false,
+            },
+          },
+        ],
+      },
+    },
+  ],
+  siteMetadata: {
+    title: "Santhosh - Portfolio",
+    author: "Santhosh J",
+  },
 }
