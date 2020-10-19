@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{"Cuy+":function(t,e,a){"use strict";a.r(e);var n=a("q1tI"),c=a.n(n),l=a("lhXr"),o=a("caCR");e.default=function(){return c.a.createElement(o.a,null,c.a.createElement(l.a,{title:"Contact"}),c.a.createElement("h1",null,"Contact me at @bgj.santhosh@gmail.com"))}}}]);
+//# sourceMappingURL=component---src-pages-contact-js-e394ec8d33f1eae1edd6.js.map
