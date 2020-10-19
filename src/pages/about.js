@@ -28,9 +28,9 @@ function AboutPage() {
           I'm a web developer who loves to code UI/UX. I started out of college
           with a PSO job in VMware and I quickly realized it was not for me.
           Once I started building things with react, there was no turning back.
-          The ability to bring life to your ideas is surreal and extremely
-          powerful. I believe in UI/UX that is both functional and aesthetically
-          pleasing. I am always looking for new things to build and learn.
+          I believe in UI/UX that is both functional and aesthetically pleasing,
+          and React and Sass help me achieve that. The ability to bring life to
+          your ideas is surreal and extremely powerful.
           <br />
           <br />
           When I'm not looking for new things to build, I am trying to keep

@@ -41,13 +41,6 @@ function IndexPage() {
             <a id="emailMe" href="mailto:bgj.santhosh@gmail.com">
               <button>Get in touch!</button>
             </a>
-            <a
-              href="https://github.com/SsjSanthosh"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Github profile
-            </a>
           </div>
         </section>
         <div className="page-break-div primary-color-bg"></div>

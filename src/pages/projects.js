@@ -32,6 +32,7 @@ function Projects() {
           node {
             title
             demo
+            github
             description {
               description
             }
