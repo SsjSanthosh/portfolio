@@ -46,4 +46,5 @@ module.exports = {
     title: "Santhosh - Portfolio",
     author: "Santhosh J",
   },
+  pathPrefix: "/portfolio",
 }

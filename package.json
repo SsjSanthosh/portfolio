@@ -11,7 +11,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy":"gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^14.1.1",
@@ -29,13 +30,15 @@
     "gatsby-source-contentful": "^2.3.48",
     "gatsby-source-filesystem": "^2.3.31",
     "gatsby-transformer-remark": "^2.8.36",
+    "gh-pages": "^3.1.0",
     "node-sass": "^4.14.1",
     "react": "^16.12.0",
     "react-accessible-accordion": "^3.3.3",
     "react-dom": "^16.12.0",
     "react-fontawesome": "^1.7.1",
     "react-helmet": "^6.1.0",
-    "react-responsive-carousel": "^3.2.10"
+    "react-responsive-carousel": "^3.2.10",
+    "save-dev": "0.0.1-security"
   },
   "devDependencies": {
     "cross-env": "^7.0.2",
