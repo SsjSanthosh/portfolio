@@ -1,28 +1,90 @@
+@import "../colors.scss";
 .hero-section {
   display: flex;
   justify-content: space-between;
+  padding-top: 4rem;
 
+  @media only screen and (max-width: 1076px) {
+    flex-direction: column;
+    padding-top: 1rem;
+  }
   .left-hero-img {
-    max-width: 60%;
-    // margin-left: 5rem;
+    width: 50%;
+    margin-right: 5rem;
+    @media only screen and (max-width: 1376px) {
+      width: 70%;
+    }
     > img {
       width: 100%;
       height: 100%;
     }
   }
-  .right-hero-desc {
-    .right-hero-img {
-      position: absolute;
-      width: 500px;
-      height: 500px;
-      right: -10%;
-      z-index: -2;
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    .skill {
+      width: 60px;
+      height: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 8px;
+
       > img {
-        top: 0;
-        height: 100%;
         width: 100%;
-        opacity: 0.5;
+        height: 100%;
       }
+    }
+  }
+  button {
+    margin-left: 0;
+  }
+}
+.page-break-div {
+  width: 100vw;
+  height: 10vh;
+  background-color: $PRIMARY_COLOR;
+  margin-top: -8px;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  @media only screen and (max-width: 1076px) {
+    flex-direction: column-reverse;
+  }
+  .about-right {
+    width: 45%;
+    height: 45%;
+    max-height: 520px;
+    > img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .about-left {
+    width: 40%;
+    height: 530px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    .strike-through {
+      text-decoration: line-through;
+    }
+    .resume-link {
+      margin-top: 16px;
+    }
+  }
+  .about-left,
+  .about-right {
+    @media only screen and (max-width: 1076px) {
+      width: 100%;
+      height: auto;
+      justify-content: center;
+      justify-self: center;
     }
   }
 }

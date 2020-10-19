@@ -3,21 +3,8 @@ import React from "react"
 
 import style from "./header.module.scss"
 function Header() {
-  const metadata = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-          author
-        }
-      }
-    }
-  `)
   return (
     <header>
-      {/* <Link to="/" className={style.link}>
-        <h1 className={style.brand}>{metadata.site.siteMetadata.title}</h1>
-      </Link> */}
       <nav>
         <ul className={style.navList}>
           <li>
@@ -38,16 +25,8 @@ function Header() {
               About
             </Link>
           </li>
-          <li>
-            <Link
-              to="/contact"
-              className={style.link}
-              activeClassName={style.activeNav}
-            >
-              Contact
-            </Link>
-          </li>
-          <li>
+          {/* TBA */}
+          {/* <li>
             <Link
               to="/blog"
               className={style.link}
@@ -55,7 +34,7 @@ function Header() {
             >
               Blog
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
               to="/projects"

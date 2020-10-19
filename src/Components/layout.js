@@ -9,9 +9,9 @@ function Layout({ children }) {
     <div className={styles.container}>
       <Header />
       <div className={styles.content}>{children}</div>
-      {/* <div className={styles.footer}>
+      <div className={styles.footer}>
         <Footer />
-      </div> */}
+      </div>
     </div>
   )
 }

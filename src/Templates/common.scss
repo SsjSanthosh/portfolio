@@ -16,6 +16,12 @@ button {
   transition: background-color 0.3s ease-in-out;
 }
 
+a {
+  border: none;
+  color: $PRIMARY_COLOR;
+  text-decoration: none;
+}
+
 .primary-color-bg {
   background-color: $PRIMARY_COLOR;
 }

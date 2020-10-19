@@ -75,7 +75,7 @@ export default function Project({ data, ...props }) {
           <div className="project-stack-wrapper">
             {project.techStack.map(tech => {
               return (
-                <div className="tech">
+                <div className="tech" key={tech}>
                   <img src={TECH_TO_ICONS[tech.toLowerCase()]} alt={tech} />
                   <span className="tech-name">{tech}</span>
                 </div>
@@ -86,7 +86,7 @@ export default function Project({ data, ...props }) {
           <div className="project-features-wrapper">
             <ul>
               {project.features.map(feature => (
-                <li>{feature}</li>
+                <li key={feature}>{feature}</li>
               ))}
             </ul>
           </div>
@@ -95,7 +95,7 @@ export default function Project({ data, ...props }) {
             <Accordion allowZeroExpanded={true}>
               {project.questions.map(question => {
                 return (
-                  <AccordionItem className="question ">
+                  <AccordionItem className="question " key={question}>
                     <AccordionItemHeading className="question-heading">
                       <AccordionItemButton className="question-button">
                         {question.question}
@@ -114,7 +114,7 @@ export default function Project({ data, ...props }) {
           <div className="project-updates-wrapper">
             <ul>
               {project.possibleFutureUpdates.map(update => (
-                <li>{update}</li>
+                <li key={update}>{update}</li>
               ))}
             </ul>
           </div>

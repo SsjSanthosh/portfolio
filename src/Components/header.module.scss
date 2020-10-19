@@ -1,3 +1,4 @@
+@import "../colors.scss";
 .brand {
   color: black;
 }
@@ -18,9 +19,12 @@
     &:hover {
       color: black;
     }
+    @media only screen and (max-width: 576px) {
+      margin: 0.3em;
+    }
   }
 }
 
 .active-nav {
-  color: black;
+  color: $PRIMARY_COLOR;
 }

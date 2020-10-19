@@ -1,10 +1,55 @@
 .project-preview-wrapper {
   display: flex;
+  flex-wrap: wrap;
+  @media only screen and (max-width: 1076px) {
+    justify-content: center;
+  }
   .project-preview {
+    @media only screen and (max-width: 1076px) {
+      width: 80%;
+      justify-self: center;
+    }
     width: 45%;
     margin: 16px;
     button {
       width: 150px;
+    }
+  }
+}
+
+.mini-project-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .mini-project {
+    width: 45%;
+    @media only screen and (max-width: 768px) {
+      width: 90%;
+    }
+    margin: 0 16px;
+    margin-bottom: 54px;
+    .mini-project-title {
+      display: flex;
+      align-items: center;
+      button {
+        width: 100px;
+        padding: 0;
+        margin: 0 12px;
+      }
+    }
+    .mini-project-tech {
+      display: flex;
+      margin-top: -48px;
+      align-items: center;
+      .mini-tech {
+        width: 40px;
+        height: 40px;
+        margin: 0 16px;
+        > img {
+          width: 100%;
+          height: 100%;
+        }
+      }
     }
   }
 }

@@ -38,24 +38,25 @@ module.exports.createPages = async ({ graphql, actions }) => {
       },
     })
   })
-  const blogs = await graphql(`
-    query {
-      allContentfulBlogs {
-        edges {
-          node {
-            slug
-          }
-        }
-      }
-    }
-  `)
-  blogs.data.allContentfulBlogs.edges.map(edge => {
-    createPage({
-      component: blogTemplate,
-      path: `/blog/${edge.node.slug}`,
-      context: {
-        slug: edge.node.slug,
-      },
-    })
-  })
+
+  // const blogs = await graphql(`
+  //   query {
+  //     allContentfulBlogs {
+  //       edges {
+  //         node {
+  //           slug
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
+  // blogs.data.allContentfulBlogs.edges.map(edge => {
+  //   createPage({
+  //     component: blogTemplate,
+  //     path: `/blog/${edge.node.slug}`,
+  //     context: {
+  //       slug: edge.node.slug,
+  //     },
+  //   })
+  // })
 }

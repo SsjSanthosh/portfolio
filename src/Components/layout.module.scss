@@ -1,16 +1,19 @@
 .container {
   margin: 0 auto;
-  max-width: 80vw;
+  width: 85vw;
   padding: 1em;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   min-height: 100vh;
-  .footer {
-    justify-self: flex-end;
+  @media only screen and (max-width: 1376px) {
+    width: 90vw;
+    padding: 1em 0;
   }
+
   .content {
-    padding: 3em 0 2em;
+    // padding: 3em 0 2em;
+    padding-bottom: 0;
     flex: 1;
   }
 }
