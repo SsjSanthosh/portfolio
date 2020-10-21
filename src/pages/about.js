@@ -41,7 +41,11 @@ function AboutPage() {
           <span className="strike-through">dog pictures</span> tech updates.
           <p className="resume-link">
             {" "}
-            <a href="" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://drive.google.com/file/d/1eCYyORz92SkMEKNHi0ye0OpsurRdNv36/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Check out my resume
             </a>
           </p>

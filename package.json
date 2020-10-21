@@ -5,14 +5,14 @@
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
-    "build": "env-cmd -f .env.development gatsby build",
+    "build": "env-cmd -f .env.production gatsby build",
     "develop": "env-cmd -f .env.development gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy":"gatsby build --prefix-paths && gh-pages -d public"
+    "deploy":"env-cmd -f .env.development gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^14.1.1",
