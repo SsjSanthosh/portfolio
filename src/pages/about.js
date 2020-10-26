@@ -42,7 +42,7 @@ function AboutPage() {
           <p className="resume-link">
             {" "}
             <a
-              href="https://drive.google.com/file/d/1eCYyORz92SkMEKNHi0ye0OpsurRdNv36/view?usp=sharing"
+              href="https://drive.google.com/file/d/1GiyvUIl4pADtOzI5Gyn6913GrPfIOtgJ/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
